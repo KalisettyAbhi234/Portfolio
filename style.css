@@ -1,0 +1,243 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Root Variables */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #ffffff;
+    --accent-color: #ffcc00;
+    --bg-color: #f5f7fa;
+    --glass: rgba(255, 255, 255, 0.2);
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Background Styling */
+body {
+    background: linear-gradient(to right, #7F7FD5, #86A8E7, #91EAE4);
+    color: #333;
+    text-align: center;
+}
+
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 15px;  /* Space between logo & navbar */
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;  /* Aligns content vertically */
+    justify-content: center;
+    align-items: center;
+    height: 60vh;  /* Reduced height (Adjust as needed) */
+    text-align: center;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero h1 span {
+    color: var(--accent-color);
+}
+
+.btn {
+    padding: 12px 20px;
+    background: var(--accent-color);
+    color: #333;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 2px 2px 10px var(--shadow);
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #ff9900;
+    transform: scale(1.05);
+}
+
+/* Section */
+.section {
+    padding: 60px 50px;
+    text-align: center;
+    background: var(--glass);
+    margin: 30px auto;
+    border-radius: 20px;
+    width: 80%;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 10px var(--shadow);
+    transition: 0.3s ease-in-out;
+}
+
+.section:hover {
+    transform: scale(1.02);
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill-box {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px var(--shadow);
+    transition: 0.3s ease-in-out;
+}
+
+.skill-box:hover {
+    background: var(--accent-color);
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Project Grid */
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px var(--shadow);
+    transition: 0.3s ease-in-out;
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+}
+
+/* Certifications Grid */
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.cert-box {
+    background: var(--glass);
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px var(--shadow);
+    transition: 0.3s ease-in-out;
+}
+
+.cert-box img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.cert-box img:hover {
+    transform: scale(1.1);
+}
+
+/* Contact */
+.contact {
+    background: var(--glass);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px var(--shadow);
+    backdrop-filter: blur(10px);
+    margin-top: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+}
+
+.contact a {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: var(--accent-color);
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 14px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
