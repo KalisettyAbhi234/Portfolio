@@ -166,6 +166,15 @@ header {
     transition: 0.3s ease-in-out;
 }
 
+.project-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  object-fit: cover;
+  height: 180px;
+}
+
+
 .project-box:hover {
     transform: scale(1.05);
 }
